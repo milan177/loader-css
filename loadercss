@@ -1,0 +1,101 @@
+E:\Work\ManInvest_Angular\src\assets\sass\custom
+
+
+/* .loader-overlay span{
+       z-index: 999;  margin:0 auto; left:0; right:0; top:45%; bottom:0; display: block; position: absolute; 
+   }
+   
+   
+   
+   .loader-overlay img{ z-index: 999;position: absolute;margin:14% auto;left:0;right:0;top:0;right:0;} */
+      @-webkit-keyframes "spin" {
+        0% {
+            -webkit-transform: rotate(0);
+            transform: rotate(0);
+        }
+        100% {
+            -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+        }
+    }
+    @keyframes "spin" {
+        0% {
+            -webkit-transform: rotate(0);
+            transform: rotate(0);
+        }
+        100% {
+            -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+        }
+    }
+    .loader-hidden {
+        visibility: hidden;
+    }
+    .loader-overlay {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: #000;
+        opacity: 0.5;
+        z-index: 99999;
+        vertical-align: middle;
+        text-align: center;
+    }
+    .chromeframe {
+        margin: 0.2em 0;
+        background: #ccc;
+        color: #000;
+        padding: 0.2em 0;
+    }
+    #loader {
+        &:after {
+            content: "";
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            right: 15px;
+            bottom: 15px;
+            border-radius: 50%;
+            border: 3px solid transparent;
+            border-top-color: #85c63f;
+            -webkit-animation: 1.5s linear infinite spin;
+            animation: 1.5s linear infinite spin;
+        }
+        &:before {
+            content: "";
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            right: 5px;
+            bottom: 5px;
+            border-radius: 50%;
+            border: 3px solid transparent;
+            border-top-color: #d60037;
+            -webkit-animation: 3s linear infinite spin;
+            animation: 3s linear infinite spin;
+        }
+        display: block;
+        position: relative;
+        left: 53%;
+        top: 53%;
+        width: 70px;
+        height: 70px;
+        margin: -75px 0 0 -75px;
+        border-radius: 50%;
+        border: 3px solid transparent;
+        border-top-color: #009dd9;
+        -webkit-animation: 2s linear infinite spin;
+        animation: 2s linear infinite spin;
+    }
+    #loader-wrapper {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 9999;
+        background-color: rgba(0,0,0,0.8);
+    }
+    
